@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--base-color);
+  transition: background-color 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+h1 {
+  text-align: center;
+  color: var(--base-color);
+  font-size: 5vw;
+  line-height: 1.7;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#quote-box {
+  width: 70%;
+  max-width: 560px;
+  height: 50vh;
+  margin: 5rem auto;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0.8;
+  background-color: white;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+#text,
+svg {
+  font-size: 1.8rem;
+  display: inline;
+  fill: var(--base-color);
+  color: var(--base-color);
+}
+#author {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: 800;
+  color: var(--base-color);
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  backdrop-filter: blur(5px);
+}
+
+.nav > a svg {
+  display: inline-block;
+  padding: 5px 10px;
+  height: 30px;
+  width: 30px;
+  fill: var(--base-color);
+  transition: 300ms transform ease-in;
+}
+.nav > a:hover {
+  transform: scale(1.1);
+}
